@@ -1,0 +1,16 @@
+<div class="card h-100 shadow" *ngIf="postData" [routerLink]="['/post',postData.id]">
+    <img src="{{postData.data.postImgPath}}" alt="dream">
+
+    <div class="card-body">
+      <div class="d-flex flex-row justify-content-between">
+
+        <small class="text-danger text-center">{{postData.data.category.category}}</small>
+        <small class="text-success text-center"
+        *ngIf="postData.data.isFeatured">Featured</small>
+        <small class="text-info text-center">Views - {{postData.data.views}}</small>
+      </div>
+        <h5 class="mt-1 post-title">{{postData.data.title}}</h5>
+        <p class="excerpt-text">{{postData.data.excerpt}}</p>
+        <div class="text-warning ms-auto">Last Updated - {{postData.data.createdAt.toMillis() | date}}</div>
+    </div>
+</div>

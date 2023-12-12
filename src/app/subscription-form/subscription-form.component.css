@@ -1,0 +1,10 @@
+.card{
+    background-color: var(--body-text-color);
+    /* width: 80vmax; */
+    position: relative;
+    color: var(--primary-color);
+}
+
+.subs-text{
+    width: 50vmax;
+}

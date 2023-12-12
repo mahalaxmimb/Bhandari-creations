@@ -1,0 +1,28 @@
+.card{
+  /* max-width: 20rem; */
+  width: 100%;
+  border: none;
+  min-height: 25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.card img{
+  min-height: 19rem;
+  max-height: 19rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: inherit;
+}
+
+.excerpt-text{
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-title{
+    /* flex-flow: 1; */
+    min-height: 3em;
+}

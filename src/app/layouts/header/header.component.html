@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md bg-white d-flex flex-column p-0 fixed-top">
+    <div class="container-fluid nav-header py-3">
+        <a href="#" class="site-logo">Bhandari Creations</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mysecondnav"
+            aria-controls="mysecondnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="container-fluid secondnav">
+      <div class="collapse navbar-collapse justify-content-center" id="mysecondnav">
+          <ul class="navbar-nav" *ngFor="let category of categoryArray">
+              <li class="nav-item ms-3"><a class="nav-link" [routerLink]="['/category',category.data.category,category.id]">{{category.data.category}}</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>

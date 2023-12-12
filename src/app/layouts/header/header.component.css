@@ -1,0 +1,11 @@
+header{
+    height: 5rem;
+}
+
+.site-logo{
+    font-size: 1.7em;
+}
+
+.secondnav{
+  background-color: var(--navbar-footer-color);
+}

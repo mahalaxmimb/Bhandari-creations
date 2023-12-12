@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --primary-color: #6A2C70;
+  --secondary-color: #B83B5E;
+  --body-text-color: #F08A5D;
+  --navbar-footer-color: #F9ED69;
+  --text-color: #333;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: var(--body-text-color);
+}
+
+a{
+  text-decoration: none;
+}
+.app-body {
+  min-height: 85vh;
+  margin-top: 4rem;
+}
+.nav-header {
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  /* width: 100px; */
+  /* left: 0%; */
+  /* transform: translate(-20%); */
+}
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: var(--navbar-footer-color);
+  color: var(--primary-color);
+}
+.site-logo:hover {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.navbar, .secondnav {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.card-img-top{
+  width: auto;
+  max-height: 30rem;
+}
+@media (min-width: 768px) {
+  .nav-header {
+    justify-content: center !important;
+  }
+  nav {
+    display: block;
+  }
+  .app-body {
+    margin-top: 7rem;
+  }
+  .navbar, .secondnav {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  /* .secondnav {
+    display: block;
+  } */
+}
+.nav-link {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.shadow {
+  border: none;
+  box-shadow: 11px 11px 23px -13px rgb(209 209 209);
+}
+
+.bg-theme {
+  background-color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 60px;
+  width: 100%;
+}
+
+.btn-theme {
+  height: 58px;
+  border: none;
+  font-size: 13px;
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-theme {
+  background-color: var(--secondary-color);
+}
+
+.text-theme-color {
+  color: var(--primary-color);
+}

@@ -1,0 +1,34 @@
+<section class="featured-section">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 text-center mt-5 mb-4">
+        <h2 class="text-white">
+          Featured Posts
+        </h2>
+        <p class="text-white">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row d-flex flex-row  mb-5 justify-content-center">
+        <div class="col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center align-items-center"
+          *ngFor="let featuredpost of featuredpostArray">
+          <app-post-card [postData]="featuredpost"></app-post-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container mt-5">
+  <div class="col-md-12 text-center">
+    <h2>Latest Posts</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div>
+  <div class="row d-flex flex-row  mb-5 justify-content-center">
+    <div class="col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center align-items-center" *ngFor="let latestpost of latestpostArray">
+      <app-post-card [postData]="latestpost"></app-post-card>
+    </div>
+  </div>
+</section>
